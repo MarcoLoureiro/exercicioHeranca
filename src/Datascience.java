@@ -1,20 +1,20 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Datascience extends Desenvolvedor{
+public class Datascience extends Desenvolvedor {
 
     private List<String> relatoriosFeitos = new ArrayList<>();
 
-    public Datascience(String nome, Integer idade){
-        super(nome,idade);
+    public Datascience(String nome, Integer idade) {
+        super(nome, idade);
     }
 
-    public Datascience(String nome, Integer idade, List<String> relatoriosFeitos){
-        super(nome,idade);
+    public Datascience(String nome, Integer idade, List<String> relatoriosFeitos) {
+        super(nome, idade);
         this.relatoriosFeitos = relatoriosFeitos;
     }
 
-    public void prepararRelatorio(String nomeArquivoCsv){
+    public void prepararRelatorio(String nomeArquivoCsv) {
         List<String> listaDeRelatoriosTemporaria = new ArrayList<>();
         listaDeRelatoriosTemporaria.add(nomeArquivoCsv);
 

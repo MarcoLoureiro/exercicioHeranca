@@ -5,14 +5,15 @@ public class Backend extends Desenvolvedor {
     public Backend(String nome, Integer idade) {
         super(nome, idade);
     }
+
     public Backend(String nome, Integer idade, String bancoDeDados) {
         super(nome, idade);
         this.bancoDeDados = bancoDeDados;
     }
 
-    private void modelarBanco(String bancoDeDados) {
+    public void modelarBanco(String bancoDeDados) {
         setBancoDeDados(bancoDeDados);
-        System.out.printf("%s está modelando banco %s !",getNome(),getBancoDeDados());
+        System.out.printf("%s está modelando banco %s !\n", getNome(), getBancoDeDados());
     }
 
     public String getBancoDeDados() {

@@ -1,4 +1,4 @@
-public abstract class Desenvolvedor extends Object {
+public abstract class Desenvolvedor {
     private String nome;
     private Integer idade;
 

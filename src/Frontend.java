@@ -5,8 +5,8 @@ public class Frontend extends Desenvolvedor {
 
     private String ferramentaTesteFrontend;
 
-    public Frontend(String nome, Integer idade){
-        super(nome,idade);
+    public Frontend(String nome, Integer idade) {
+        super(nome, idade);
     }
 
     public Boolean getDesenvolveTelasResponsivas() {
@@ -23,6 +23,12 @@ public class Frontend extends Desenvolvedor {
 
     public void setFerramentaTesteFrontend(String ferramentaTesteFrontend) {
         this.ferramentaTesteFrontend = ferramentaTesteFrontend;
+    }
+
+    public void validarResponsividade(){
+        setFerramentaTesteFrontend("Figma");
+        setDesenvolveTelasResponsivas(true);
+        System.out.printf("Desenvolve telas responsivas no %s : %b \n",getFerramentaTesteFrontend(),getDesenvolveTelasResponsivas());
     }
 
     @Override
