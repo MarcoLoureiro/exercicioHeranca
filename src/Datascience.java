@@ -5,14 +5,23 @@ public class Datascience extends Desenvolvedor{
 
     private List<String> relatoriosFeitos = new ArrayList<>();
 
-
-    public void prepararRelatorio(String nomeArquivoCsv){
-
-    }
-
     public Datascience(String nome, Integer idade){
         super(nome,idade);
     }
+
+    public Datascience(String nome, Integer idade, List<String> relatoriosFeitos){
+        super(nome,idade);
+        this.relatoriosFeitos = relatoriosFeitos;
+    }
+
+    public void prepararRelatorio(String nomeArquivoCsv){
+        List<String> listaDeRelatoriosTemporaria = new ArrayList<>();
+        listaDeRelatoriosTemporaria.add(nomeArquivoCsv);
+
+        setRelatoriosFeitos(listaDeRelatoriosTemporaria);
+        System.out.println(getRelatoriosFeitos());
+    }
+
 
     public List<String> getRelatoriosFeitos() {
         return relatoriosFeitos;
